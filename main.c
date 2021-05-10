@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <math.h>
 
-#define P 47
-#define Q 71
+#define P 61
+#define Q 53
 
 #define N (P*Q)
 #define Z ((P - 1) * (Q - 1)) // φ(N)
 
-#define E 79
-#define D 1019
+#define E 17
+#define D 413
 
 int POW(int m, int ed, int n)
 {
@@ -24,7 +24,7 @@ int POW(int m, int ed, int n)
 
 int main(void)
 {
-   int Message = 2357;
+   int Message = 65;
    //int Encode = (int)pow((double)Message, E) % N;
    //int Decode = (int)pow((double)Encode, D) % N;
    int Encode = POW(Message, E, N);
