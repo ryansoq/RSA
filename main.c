@@ -10,16 +10,16 @@
 #define E 79
 #define D 1019
 
-int POW(int M, int ED, int NN)
+int POW(int m, int ed, int n)
 {
-    int VALUE = 1;
+    int value = 1;
 
-    for (int i = 0; i < ED; i++)
+    for (int i = 0; i < ed; i++)
     {
-        VALUE = (VALUE * M) % NN;
+        value = (value * m) % n;
     }
 
-    return VALUE;
+    return value;
 }
 
 int main(void)
